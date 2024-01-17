@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+
+.group-a-container {
+  display: grid;
+  grid-template-columns: 290px 60px;
+  column-gap: 5px;
+  row-gap: 10px;
+}
+
+.group-a-container *:nth-child(odd) {
+  text-align: right;
+}
+
+.group-a-container *:nth-child(odd)::after {
+  content: ":";
+}
+
+.group-b-container {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  column-gap: 5px;
+  row-gap: 10px;
+}
+
+.group-b-container label {
+  text-align: right;
+}
+
+.group-b-container label::after {
+  content: " ×";
+}
+
+.group-b-container span::before {
+  content: "= "
+}
+
+#group-b-total-label {
+  grid-column: span 2;
+  text-align: right;
+}
+
+#group-b-total-label::before {
+  content: "";
+}
+
+#total {
+  font-size: 2rem;
+  border: 5px solid cornflowerblue;
+  font-weight: bold;
+  width: max-content;
+  padding: 0 20px;
+}

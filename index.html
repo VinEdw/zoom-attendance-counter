@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Attendance Counter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Zoom Attendance Counter</h1>
+    
+    <h2>Group A</h2>
+    <div class="group-a-container">
+      <label for="total-participants">Total participants</label><input id="total-participants" type="number" min="0">
+      <label for="devices-at-kh">Subtract devices present in person</label><input id="devices-at-kh" type="number" min="0">
+      <span>Subtract total participated in poll</span><span id="poll-respondents">___</span>
+      <label for="extras">Add extras</label><input id="extras" type="number">
+      <span>Group A Total</span><span id="group-a-total">___</span>
+    </div>
+    
+    <h2>Group B</h2>
+    <p>Add up the results from each category below</p>
+    <div class="group-b-container">
+      <label for="1-responses">1</label><input id="1-responses" type="number" min="0"><span id="1-total">___</span>
+      <label for="2-responses">2</label><input id="2-responses" type="number" min="0"><span id="2-total">___</span>
+      <label for="3-responses">3</label><input id="3-responses" type="number" min="0"><span id="3-total">___</span>
+      <label for="4-responses">4</label><input id="4-responses" type="number" min="0"><span id="4-total">___</span>
+      <label for="5-responses">5</label><input id="5-responses" type="number" min="0"><span id="5-total">___</span>
+      <label for="6-responses">6</label><input id="6-responses" type="number" min="0"><span id="6-total">___</span>
+      <label for="7-responses">7</label><input id="7-responses" type="number" min="0"><span id="7-total">___</span>
+      <span id="group-b-total-label">Group B Total</span><span id="group-b-total">___</span>
+    </div>
+    
+    <h2>Total</h2>
+    <p>Add Group A and Group B Totals Together</p>
+    <p id="total">___</p>
+  </body>
+</html>
